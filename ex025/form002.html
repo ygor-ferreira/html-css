@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <style>
-       #senha:hover {
-            background-color: red;
-            transition: .9s;
-            border-radius: 20%;
-            width: 400px;
-            height: 800px;
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Testando formulário</h1>
-    <form action="">
-        <p>Fruta: <input type="text" name="fruta" id="ifruta"></p>
-        <p>Legumes <input type="password" name="" id=""></p>
-        <input type="button" value="Enviar" id="senha">
-        
+    <h1> Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <Label for="iusu">Usuário:</Label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="30" size="10" placeholder="Nome do Usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" autocomplete="current-password">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
     
 </body>
